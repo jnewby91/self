@@ -17,7 +17,8 @@
     $('#work').click(function(){
         event.preventDefault(); 
         console.log('prevented default action');
-        hidePage('.About_Me .sectionOverlay'); 
+        hidePage('.About_Me .sectionOverlay');
+        hidePage('.Contact_Info'); 
         showPage('.Portfolio ')
     })
  }
@@ -26,13 +27,33 @@
     $('#home').click(function(){
         event.preventDefault(); 
         console.log('prevented default action');
-        hidePage('.Portfolio' ); 
+        hidePage('.Portfolio');
+        hidePage('.Contact_Info'); 
         showPage('.About_Me .sectionOverlay')
+    })
+ }
+
+ function showContactInfo(){
+     $('#contact').click(function(){
+         event.preventDefault(); 
+         hidePage('.Portfolio')
+         hidePage('About_Me');
+         showPage('.Contact_Info'); 
+     })
+ }
+
+ function animateDownArrow(){
+    $('#down-arrow').click(function(){
+       $('.titleOverlay').slideToggle(1000, function(){
+         //  hidePage('.titleOverlay') 
+       })
     })
  }
 
 
  $(function (){
+    animateDownArrow();
     showPortfolio(); 
     showAboutMe();
+    showContactInfo();
  });

@@ -60,9 +60,10 @@ h1 {
 }
 
 #down-arrow {
-    margin: 0px 49% 70px;
+    margin: 30px 49% 70px;
+    position: relative;
+    top: -50px;
 }
-
 li p {
     color: black;
     font-size: 30px;
@@ -247,6 +248,35 @@ ul.languageIcon {
 
 .description {
     text-align: center;
+}
+
+
+.Contact_Info .sectionOverlay {
+    background-color: white;
+    border: 2px solid #707070;
+    width: fit-content;
+    margin: 5% auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 6px 7px 1px black;
+}
+
+.Contact_Info h2 {
+    font-size: 50px;
+    font-family: 'Californian Fb';
+    text-align: center;
+    margin: 10px;
+    color: #455260;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #707070;
+}
+
+.Contact_Info p {
+    line-height: 1.7;
+    margin: 50px 0px 50px 0px;
+    font-size: 25px;
 }
 /* .About_Me .sectionOverlay p{
     font-size: 20px;
