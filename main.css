@@ -64,6 +64,15 @@ h1 {
     position: relative;
     /* top: -50px; */
 }
+
+/* .flip{
+    transform: rotate(-180deg);
+} */
+
+#down-arrow:hover {
+    cursor: pointer; 
+    filter: invert(100%); 
+}
 li p {
     color: black;
     font-size: 30px;
@@ -84,6 +93,8 @@ section {
     border: 2px solid #707070;
     width: 70%;
     margin: 5% auto;
+    max-width: 70%;
+    height: 50%;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -158,6 +169,7 @@ li {
 }
 .icons li img:hover{
     filter: invert(100%); 
+    cursor: pointer; 
 }
 
 button {
@@ -175,6 +187,7 @@ button:hover {
     color: white;
     background-color: #455260;
     border: grey;
+    cursor: pointer; 
 }
 
 .artistShuffle{
@@ -231,12 +244,12 @@ ul.languageIcon {
 
 
 .projectImage img {
-    height: 476px;
+    height: 500px;
     margin: 60px 40px 60px 40px;
-    border-radius: 25px;
+    border-radius: 4px;
     width: 450px;
     /* margin: 0px auto; */
-} 
+}
 
 .Portfolio p {
     line-height: 1.5;
@@ -290,7 +303,8 @@ ul.languageIcon {
     font-size: 50px;
     font-family: 'Californian Fb';
     text-align: center;
-    margin: 10px;
+    width: max-content;
+    margin: 10px auto;
     color: #455260;
     padding-bottom: 20px;
     border-bottom: 1px solid #707070;
@@ -299,6 +313,7 @@ ul.languageIcon {
 .Contact_Info img {
     width: 100px;
     height: 100px;
+    padding: 10px; 
 }
 
 .Contact_Info p {
@@ -309,6 +324,10 @@ ul.languageIcon {
 
 .contactLinks{
     text-align: center;
+}
+
+.contactLinks img{
+
 }
 
 /* .About_Me .sectionOverlay p{
