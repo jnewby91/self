@@ -233,6 +233,7 @@ button:hover {
     font-size: 22px;
     font-family: 'Californian Fb';
     text-align: -webkit-center;
+    text-decoration: underline;
     margin: 40px;
     color: #455260;
     /* padding-bottom: 0px; */
