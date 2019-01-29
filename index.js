@@ -16,7 +16,6 @@
  function showPortfolio(){
     $('#work').click(function(){
         event.preventDefault(); 
-        console.log('prevented default action');
         hidePage('.About_Me .sectionOverlay');
         hidePage('.Contact_Info'); 
         showPage('.Portfolio ')
@@ -26,7 +25,6 @@
  function showAboutMe(){
     $('#home').click(function(){
         event.preventDefault(); 
-        console.log('prevented default action');
         hidePage('.Portfolio');
         hidePage('.Contact_Info'); 
         showPage('.About_Me .sectionOverlay')
