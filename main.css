@@ -25,6 +25,11 @@ h1 {
     /* border-top: 4px solid white; */
 }
 
+main {
+    width: -webkit-fill-available;
+}
+
+
 
 .titleOverlay {
     display: flex;
@@ -91,7 +96,7 @@ section {
 .sectionOverlay {
     background-color: white;
     border: 2px solid #707070;
-    width: 70%;
+    width: 90%;
     margin: 5% auto;
     max-width: 70%;
     height: 50%;
@@ -212,7 +217,7 @@ button:hover {
 }
 
 .Portfolio .sectionOverlay{
-    width: 70%; 
+    width: fit-content; 
 }
 
 .Portfolio h2 {
@@ -303,7 +308,6 @@ ul.languageIcon {
     font-size: 50px;
     font-family: 'Californian Fb';
     text-align: center;
-    width: max-content;
     margin: 10px auto;
     color: #455260;
     padding-bottom: 20px;
@@ -328,6 +332,183 @@ ul.languageIcon {
 
 .contactLinks img{
 
+}
+
+@media only screen and (max-width:320px){
+
+    main {
+        width: fit-content;
+    }
+
+    .titleOverlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 5%;
+        border: 5px solid #455260;
+        border-radius: 5px;
+        width: 50%;
+        background-color: #ffffffa8;
+        text-align: center;
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h1 {
+        font-family: 'Californian Fb';
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #455260;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #707070;
+    }
+
+    .Portfolio h3, .Contact_Info h3 {
+        font-size: 18px;
+    }
+
+    .description {
+        padding-bottom: 20px;
+    }
+
+    #down-arrow {
+        margin: 10px 120px;
+        position: relative;
+    }
+
+    .bio h2, .Portfolio h2, .Contact_Info h2{
+        font-size: 20px;
+    }
+
+    .bio p, .Portfolio p, .Contact_Info p {
+        line-height: 1.7;
+        margin: 20px auto;
+        font-size: 15px;
+    }
+    
+    .artistShuffle, .bibleNoteTakingApp, .priceGuess  {
+        width: -webkit-fill-available;
+    }
+
+    .languageIcon img {
+        width: 35px;
+    }
+
+    button {
+        font-family: 'Californian Fb';
+        font-size: 15px;
+        color: #455260;
+        background-color: white;
+        border: 2px solid #455260;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    .Contact_Info p {
+        text-align: center;
+    }
+
+    .projectImage img {
+        display: none;
+    }
+    .contactLinks img{
+        width: 25px;
+        height: 25px; 
+    }
+}
+
+@media only screen and (max-width:425px){
+    .titleOverlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin: 5%;
+        border: 5px solid #455260;
+        border-radius: 5px;
+        width: 50%;
+        background-color: #ffffffa8;
+        text-align: center;
+        padding-left: 75px;
+        padding-right: 75px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h1 {
+        font-family: 'Californian Fb';
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #455260;
+        text-align: center;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #707070;
+    }
+
+    .Portfolio h3, .Contact_Info h3 {
+        font-size: 18px;
+    }
+
+    .description {
+        padding-bottom: 20px;
+    }
+
+    #down-arrow {
+        margin: 10px 155px;
+        position: relative;
+    }
+
+    .bio h2, .Portfolio h2, .Contact_Info h2{
+        font-size: 20px;
+    }
+
+    .bio p, .Portfolio p, .Contact_Info p {
+        line-height: 1.7;
+        margin: 20px auto;
+        font-size: 15px;
+    }
+    
+    .artistShuffle, .bibleNoteTakingApp, .priceGuess  {
+        width: -webkit-fill-available;
+    }
+
+    .languageIcon img {
+        width: 35px;
+    }
+
+    button {
+        font-family: 'Californian Fb';
+        font-size: 15px;
+        color: #455260;
+        background-color: white;
+        border: 2px solid #455260;
+        padding: 5px;
+        border-radius: 3px;
+    }
+    .Contact_Info p {
+        text-align: center;
+    }
+
+    .projectImage img {
+        display: none;
+    }
+    .contactLinks img{
+        width: 25px;
+        height: 25px; 
+    }
+
+}
+
+
+@media only screen and (max-width:768px){
+    .artistShuffle, .bibleNoteTakingApp, .priceGuess {
+        display: flex;
+        align-items: stretch;
+        flex-direction: column-reverse;
+    }
 }
 
 /* .About_Me .sectionOverlay p{
