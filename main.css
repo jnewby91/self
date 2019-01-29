@@ -522,6 +522,12 @@ button:hover {
     .About_Me .sectionOverlay img{
         display:none; 
     }
+
+    .projectImage {
+        display: flex;
+        align-items: center;
+    }
+    
     .artistShuffle, .bibleNoteTakingApp, .priceGuess {
         display: flex;
         align-items: stretch;
