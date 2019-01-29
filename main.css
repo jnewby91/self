@@ -98,7 +98,6 @@ section {
     border: 2px solid #707070;
     width: 90%;
     margin: 5% auto;
-    max-width: 70%;
     height: 50%;
     padding: 10px;
     display: flex;
@@ -338,7 +337,9 @@ button:hover {
     main {
         width: fit-content;
     }
-
+    .About_Me .sectionOverlay img{
+        display:none; 
+    }
     .titleOverlay {
         display: flex;
         flex-direction: column;
@@ -388,6 +389,11 @@ button:hover {
         margin: 20px auto;
         font-size: 15px;
     }
+
+    .bio {
+        width: 90%;
+        margin: 10px auto;
+    }
     
     .artistShuffle, .bibleNoteTakingApp, .priceGuess  {
         width: -webkit-fill-available;
@@ -420,6 +426,11 @@ button:hover {
 }
 
 @media only screen and (max-width:425px){
+
+    .About_Me .sectionOverlay img{
+        display:none; 
+    }
+
     .titleOverlay {
         display: flex;
         flex-direction: column;
@@ -445,6 +456,11 @@ button:hover {
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #707070;
+    }
+
+    .bio {
+        width: 90%;
+        margin: 10px auto;
     }
 
     .Portfolio h3, .Contact_Info h3 {
@@ -503,10 +519,21 @@ button:hover {
 
 
 @media only screen and (max-width:768px){
+    .About_Me .sectionOverlay img{
+        display:none; 
+    }
     .artistShuffle, .bibleNoteTakingApp, .priceGuess {
         display: flex;
         align-items: stretch;
         flex-direction: column-reverse;
+    }
+
+    .projectImage img {
+        height: 400px;
+        align-items: center;
+        border-radius: 4px;
+        width: 370px;
+        margin: 0px auto;
     }
 }
 
