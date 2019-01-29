@@ -78,11 +78,13 @@ main {
     cursor: pointer; 
     filter: invert(100%); 
 }
+
 li p {
-    color: black;
-    font-size: 30px;
+    color: white;
+    font-size: 18px;
     text-align: center;
     display: none;
+    border-top: 1px solid white;
 }
 
 
@@ -213,10 +215,6 @@ button:hover {
     display: flex;
     align-items: stretch;
     flex-direction: row-reverse;
-}
-
-.Portfolio .sectionOverlay{
-    width: fit-content; 
 }
 
 .Portfolio h2 {
@@ -527,7 +525,7 @@ button:hover {
         display: flex;
         align-items: center;
     }
-    
+
     .artistShuffle, .bibleNoteTakingApp, .priceGuess {
         display: flex;
         align-items: stretch;
