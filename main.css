@@ -109,13 +109,13 @@ section {
     box-shadow: 1px 6px 7px 1px black;
 }
 
-#Portfolio{
+/* #Portfolio{
     display: none; 
 }
 
 #Contact_Info{
     display: none; 
-}
+} */
 
 
 .About_Me .sectionOverlay img {
@@ -150,6 +150,9 @@ section {
     line-height: 1.5;
     margin: 30px 0px 30px 0px;
     font-size: 20px;
+}
+.icons{
+    display: none;
 }
 
 .icons ul {
